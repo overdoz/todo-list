@@ -33,3 +33,4 @@ const AddTodo = ({ dispatch }) => {
   )
 }
 export default connect()(AddTodo)
+// connect() ist die Verbindung zum Redux Store

@@ -16,9 +16,14 @@ const getVisibleTodos = (todos, filter) => {
       throw new Error('Unknown filter: ' + filter)
   }
 }
+
+// sobald der global state verändert wird, wird mapStateToProps aufgerufen
+// diese Funktion ruft das Array (state.todos) auf und filtert die Einträge
 const mapStateToProps = state => ({
   todos: getVisibleTodos(state.todos, state.visibilityFilter)
 })
+
+// sobald ein <Todo> element angeklickt wird eine (toggleTodo action) verschickt (actions/index.js -> toggletodo)
 const mapDispatchToProps = dispatch => ({
   toggleTodo: id => dispatch(toggleTodo(id))
 })

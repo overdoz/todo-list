@@ -1,11 +1,11 @@
-// Unterliste "todos" von State
+// Unterliste "todos" von State, quasi ein Teil des gesamten States
 // todos ist hier ein Array
 // todos ist ein data state - wichtig: von UI state trennen
 // z.B. this.state.todos = [1, 2, 3]
 
 // jeder state hat seine eigenen methoden ->
 // jede state Aufgabe lässt sich untergliedern
-// state wird nicht verändert sondern kopiert und bearbeitet
+// state wird nicht verändert sondern kopiert und bearbeitet (pure function)
 
 const todos = (state = [], action) => {
     switch (action.type) {
@@ -23,10 +23,8 @@ const todos = (state = [], action) => {
         ]
       case 'TOGGLE_TODO':
         return state.map(todo =>
-          (todo.id === action.id)
-            ? {...todo, completed: !todo.completed}
-            : todo
-            // wenn id übereinstimmt dann return ein neues Todo Element mit completed
+          (todo.id === action.id) ? {...todo, completed: !todo.completed} : todo
+            // wenn id übereinstimmt dann return ein neues Todo Element mit "completed"
         )
       default:
         return state

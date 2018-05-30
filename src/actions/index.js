@@ -1,7 +1,9 @@
 let nextTodoId = 0
 
 // actions beschreiben was passiert ist
+// z.B. etwas wurde geliked, ein button wurde geklickt...
 // action creators geben ein JavaSCript Objekt aus
+// die Struktur einer Action ist einem selbst überlassen
 export const addTodo = text => ({
   type: 'ADD_TODO',
   id: nextTodoId++,

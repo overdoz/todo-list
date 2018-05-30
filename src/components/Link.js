@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+
+// die Props werden in containers/FilterLink.js übergeben
+// das JS Objekt als Argument ist mir noch ein Rätsel
 const Link = ({ active, children, onClick }) => (
   <button
      onClick={onClick}

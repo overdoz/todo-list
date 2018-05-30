@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
 
+// wieso wird hier ein Objekt als Argument übergeben?
 const TodoList = ({ todos, toggleTodo }) => (
   <ul>
     {todos.map(todo =>

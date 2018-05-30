@@ -17,3 +17,5 @@ export default connect(
   mapDispatchToProps
 )(Link)
 // Die connect Funktion verbindet den container mit dem Component
+// ich weiß noch nicht woher und wohin mit "ownProps"...
+// mehr dazu: https://github.com/reduxjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options

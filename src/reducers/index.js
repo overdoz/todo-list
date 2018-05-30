@@ -7,7 +7,7 @@ export default combineReducers({
   visibilityFilter
 })
 
-// reducer updaten die states
+// reducers updaten die states
 // kombiniert beide States
 // z.B. this.state = {
 //  todos: []
