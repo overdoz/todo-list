@@ -14,6 +14,12 @@ const AddTodo = ({ dispatch }) => {
             return
           }
           dispatch(addTodo(input.value))
+          // addTodo action wird abgeschickt
+          //  {
+          //    type: 'ADD_TODO',
+          //    id: 0,
+          //    text: INPUT.VALUE
+          //  }
           
           input.value = ''
         }}

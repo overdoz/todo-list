@@ -1,7 +1,7 @@
 let nextTodoId = 0
 
-// actions definieren was passiert
-// action creators geben ein Objekt aus
+// actions beschreiben was passiert ist
+// action creators geben ein JavaSCript Objekt aus
 export const addTodo = text => ({
   type: 'ADD_TODO',
   id: nextTodoId++,
@@ -24,7 +24,7 @@ export const toggleTodo = id => ({
   id
 })
 
-// die 3 möglichen Filterarten
+// die 3 möglichen Filterarten als Konstanten
 export const VisibilityFilters = {
   SHOW_ALL: 'SHOW_ALL',
   SHOW_COMPLETED: 'SHOW_COMPLETED',

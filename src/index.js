@@ -14,7 +14,7 @@ import App from './components/App'
 const store = createStore(rootReducer)
 // mit createStore lässt sich unsere index.js (rootReducer) datei zum store umwandeln
 setInterval(console.log(store.getState()), 2000) 
-set
+
 
 render(
   <Provider store={store}>
